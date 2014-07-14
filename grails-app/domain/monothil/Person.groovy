@@ -14,8 +14,10 @@ class Person {
 
     String username
     String password
-
     String salt
+
+    String name
+    String email
 
     final boolean enabled = true
     final boolean accountExpired = false
@@ -30,6 +32,8 @@ class Person {
         username blank: false, unique: true
         password blank: false
         salt blank: false, bindable: false
+        name blank: false
+        email blank: false, email: true
     }
 
     static mapping = {
