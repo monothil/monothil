@@ -1,0 +1,13 @@
+{
+  "name": "monothil",
+  "version": "0.1.0",
+  "homepage": "https://github.com/monothil/monothil",
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
