@@ -1,0 +1,15 @@
+{
+  "name": "monothil",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monothil/monothil.git"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/monothil/monothil/issues"
+  },
+  "homepage": "https://github.com/monothil/monothil"
+}
