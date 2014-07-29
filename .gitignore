@@ -49,3 +49,6 @@ bower_components/
 
 # Gulp
 /grails-app/assets/vendor/
+
+# tsd
+/typings/

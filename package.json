@@ -18,6 +18,7 @@
     "del": "0.1.1",
     "gulp": "3.8.6",
     "gulp-tsc": "0.9.1",
-    "main-bower-files": "1.0.0"
+    "main-bower-files": "1.0.0",
+    "tsd": "0.5.7"
   }
 }
