@@ -12,5 +12,19 @@
     ],
     "dependencies": {
         "angular": "1.2.20"
+    },
+    "overrides": {
+        "angular": {
+            "main": {
+                "development": [
+                    "**/angular.js",
+                    "**/angular-csp.css"
+                ],
+                "production": [
+                    "**/angular.min.js",
+                    "**/angular-csp.css"
+                ]
+            }
+        }
     }
 }
