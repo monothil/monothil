@@ -46,3 +46,6 @@ node_modules/
 
 # Bower
 bower_components/
+
+# Gulp
+/grails-app/assets/vendor/
