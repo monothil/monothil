@@ -14,12 +14,12 @@ gulp.task 'default', ['watch']
 
 gulp.task 'bower', ->
   gulp.src bowerFiles()
-    .pipe(gulp.dest paths.vendorDest)
+    .pipe gulp.dest(paths.vendorDest)
 
 gulp.task 'compile', ->
   gulp.src paths.scripts
-    .pipe(typescript { emitError: false })
-    .pipe(gulp.dest paths.dest)
+    .pipe typescript { emitError: false }
+    .pipe gulp.dest(paths.dest)
 
 gulp.task 'watch', ->
   gulp.watch paths.scripts, ['compile']
