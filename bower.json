@@ -1,30 +1,30 @@
 {
-    "name": "monothil",
-    "version": "0.1.0",
-    "homepage": "https://github.com/monothil/monothil",
-    "license": "Apache 2.0",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "angular": "1.2.20"
-    },
-    "overrides": {
-        "angular": {
-            "main": {
-                "development": [
-                    "**/angular.js",
-                    "**/angular-csp.css"
-                ],
-                "production": [
-                    "**/angular.min.js",
-                    "**/angular-csp.css"
-                ]
-            }
-        }
+  "name": "monothil",
+  "version": "0.1.0",
+  "homepage": "https://github.com/monothil/monothil",
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.20"
+  },
+  "overrides": {
+    "angular": {
+      "main": {
+        "development": [
+          "**/angular.js",
+          "**/angular-csp.css"
+        ],
+        "production": [
+          "**/angular.min.js",
+          "**/angular-csp.css"
+        ]
+      }
     }
+  }
 }
