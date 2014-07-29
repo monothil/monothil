@@ -2,6 +2,8 @@ gulp = require 'gulp'
 bowerFiles = require 'main-bower-files'
 typescript = require 'gulp-tsc'
 
+process.env.NODE_ENV = 'development'
+
 paths = {
   scripts: 'src/typescript/**/*.ts'
   dest: 'grails-app/assets/javascripts'
