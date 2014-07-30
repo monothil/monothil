@@ -48,6 +48,7 @@ node_modules/
 bower_components/
 
 # Gulp
+/grails-app/assets/javascripts/
 /grails-app/assets/vendor/
 
 # tsd
