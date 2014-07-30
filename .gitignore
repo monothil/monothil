@@ -51,4 +51,4 @@ bower_components/
 /grails-app/assets/vendor/
 
 # tsd
-/typings/
+/src/typescript/typings/
