@@ -7,6 +7,7 @@ class UrlMappings {
             }
         }
 
+        "/issue"(resources: "issue")
         "/"(controller: "home", action: "index")
         "500"(view: '/error')
     }
