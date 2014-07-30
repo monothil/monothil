@@ -10,7 +10,7 @@
 
 <body>
 <div ng-app="monothil">
-    <div ng-controller="IssueController" ng-init='init({ id : ${params.id} , resourceUrl : "${createLink(controller: 'issue')}" })'>
+    <div ng-controller="IssueController" ng-init='init({ id : ${issue.id} , resourceUrl : "${createLink(controller: 'issue')}" })'>
         <a href="#show-issue" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 
         <div class="nav sub-nav" role="navigation">

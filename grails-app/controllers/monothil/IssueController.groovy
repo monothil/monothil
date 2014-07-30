@@ -11,11 +11,7 @@ class IssueController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-    @Secured(["permitAll"])
-    def secret(String guid) {
-        println "SECRET!!: ${guid}"
-        respond view: 'show'
-    }
+    def springSecurityService
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -24,6 +20,17 @@ class IssueController {
 
     def show(Issue issue) {
         respond issue
+    }
+
+    @Secured(["permitAll"])
+    def secret() {
+        println "SECRET!!: ${params.guid}"
+        def issue = Issue.findByGuid(params.guid)
+        if (issue == null) {
+            notFound()
+            return
+        }
+        respond issue, view: "show"
     }
 
     @Secured(["permitAll"])
@@ -49,7 +56,12 @@ class IssueController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'issue.label', default: 'Issue'), issue.id])
-                redirect issue
+
+                if (springSecurityService.loggedIn) {
+                    redirect action: "show", params: [id: issue.id]
+                } else {
+                    redirect action: "secret", params: [guid: issue.guid]
+                }
             }
             '*' { respond issue, [status: CREATED] }
         }
