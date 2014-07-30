@@ -11,7 +11,7 @@ paths = {
   vendorDest: 'grails-app/assets/vendor'
 }
 
-gulp.task 'default', ['watch']
+gulp.task 'default', ['build']
 
 gulp.task 'clean', (cb) ->
   del [paths.dest, paths.vendorDest], cb
@@ -25,5 +25,7 @@ gulp.task 'compile', ->
     .pipe typescript { emitError: false }
     .pipe gulp.dest(paths.dest)
 
-gulp.task 'watch', ->
+gulp.task 'watch', ['build'], ->
   gulp.watch paths.scripts, ['compile']
+
+gulp.task 'build', ['clean', 'bower', 'compile']

@@ -8,6 +8,9 @@
     "angularjs/angular.d.ts": {
       "commit": "11c40b45e06105c6115932d868cd7e0a73bda719"
     },
+    "angularjs/angular-resource.d.ts": {
+      "commit": "6d587e9ad8312de93a9212e63501945bfc681bcd"
+    },
     "jquery/jquery.d.ts": {
       "commit": "11c40b45e06105c6115932d868cd7e0a73bda719"
     },
