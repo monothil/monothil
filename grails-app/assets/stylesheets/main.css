@@ -95,6 +95,7 @@ img {
 }
 
 .content {
+    margin-top: 1.5em;
 }
 
 .content h1 {
@@ -135,12 +136,13 @@ img {
 /* NAVIGATION MENU */
 
 .nav {
-    background-color: #efefef;
-    padding: 0.5em 0.75em;
+    background-color: #eee;
+    padding: 0.4em 0.75em;
     -moz-box-shadow: 0 0 3px 1px #aaaaaa;
     -webkit-box-shadow: 0 0 3px 1px #aaaaaa;
     box-shadow: 0 0 3px 1px #aaaaaa;
     zoom: 1;
+    font-size: 95%;
 }
 
 .nav ul {
@@ -200,6 +202,15 @@ img {
 
 .nav a.create {
     background-image: url(../images/skin/database_add.png);
+}
+
+.sub-nav {
+    background-color: #ddd;
+    padding: 0.2em 1em;
+    -moz-box-shadow: 0 1px 1px 0 #aaaaaa;
+    -webkit-box-shadow: 0 1px 1px 0 #aaaaaa;
+    box-shadow: 0 1px 1px 0 #aaaaaa;
+    font-size: 95%;
 }
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
@@ -611,4 +622,8 @@ ul {
 .fieldcontain textArea {
     width: 70%;
     height: 20em;
+}
+
+.hidden {
+    display: none;
 }
