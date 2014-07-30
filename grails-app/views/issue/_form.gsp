@@ -4,8 +4,7 @@
         <g:message code="issue.subject.label" default="Subject"/>
         <span class="required-indicator">*</span>
     </label>
-    <g:textField name="subject" required="" value="${issue?.subject}"/>
-    <span class="caption"><g:message code="issue.subject.caption"/></span>
+    <g:textField name="subject" required="" value="${issue?.subject}" placeholder="${message(code:"issue.subject.placeholder")}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: issue, field: 'description', 'error')} required">
@@ -13,8 +12,7 @@
         <g:message code="issue.description.label" default="Description"/>
         <span class="required-indicator">*</span>
     </label>
-    <g:textArea name="description" required="" value="${issue?.description}"/>
-    <span class="caption"><g:message code="issue.description.caption"/></span>
+    <g:textArea name="description" required="" value="${issue?.description}" placeholder="${message(code:"issue.description.placeholder")}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: issue, field: 'issuerName', 'error')} required">
@@ -23,7 +21,7 @@
         <span class="required-indicator">*</span>
     </label>
     <g:textField name="issuerName" required="" value="${issue?.issuerName}"/>
-    <span class="caption"><g:message code="issue.issuerName.caption"/></span>
+    <span class="placeholder"><g:message code="issue.issuerName.placeholder"/></span>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: issue, field: 'issuerEmail', 'error')} required">
@@ -32,13 +30,12 @@
         <span class="required-indicator">*</span>
     </label>
     <g:field type="email" name="issuerEmail" required="" value="${issue?.issuerEmail}"/>
-    <span class="caption"><g:message code="issue.issuerEmail.caption"/></span>
+    <span class="placeholder"><g:message code="issue.issuerEmail.placeholder"/></span>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: issue, field: 'dueDate', 'error')} required">
     <label for="dueDate">
         <g:message code="issue.dueDate.label" default="Due Date"/>
     </label>
-    <g:field type="text" name="dueDate" value="${issue?.dueDate}"/>
-    <span class="caption"><g:message code="issue.dueDate.caption"/></span>
+    <g:field type="text" name="dueDate" value="${issue?.dueDate}" placeholder="${message(code:"issue.dueDate.placeholder")}"/>
 </div>
