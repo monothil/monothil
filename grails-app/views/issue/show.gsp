@@ -5,6 +5,7 @@
     <meta name="layout" content="main">
     <g:set var="entityName" value="${message(code: 'issue.label', default: 'Issue')}"/>
     <title><g:message code="default.show.label" args="[entityName]"/></title>
+    <asset:stylesheet src="xeditable.css"/>
     <asset:javascript src="issue-app.js"/>
 </head>
 
@@ -29,7 +30,7 @@
                 <g:if test="${issue?.subject}">
                     <li class="fieldcontain">
                         <span id="subject-label" class="property-label"><g:message code="issue.subject.label" default="Subject"/></span>
-                        <span class="property-value" aria-labelledby="subject-label" ng-bind="issue.subject"></span>
+                        <span class="property-value" aria-labelledby="subject-label" ng-bind="issue.subject" editable-text="issue.subject"></span>
                     </li>
                 </g:if>
                 <g:if test="${issue?.description}">
