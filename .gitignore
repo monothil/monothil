@@ -41,5 +41,14 @@
 # other
 *.iws
 
+# Node.js
+node_modules/
 
+# Bower
+bower_components/
 
+# Gulp
+/grails-app/assets/vendor/
+
+# tsd
+/typings/
